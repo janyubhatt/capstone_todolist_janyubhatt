@@ -4,6 +4,14 @@ html {
 }
 
 body {
-    background-color: #8F88FF;
+    background-color:#004755;
+    margin: 0px;
+    
+}
+
+#main{
+	margin: 50px auto;
+	width: 50%;
+	background-color: white;
 }
 
