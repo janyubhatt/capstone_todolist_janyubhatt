@@ -1,0 +1,17 @@
+Notes From HTML Dog:
+
+HTML{
+
+
+}
+
+CSS{
+
+colors are defined by :
+    name, rgb (rrr,ggg,bbb), rgb(r%,g%,b%), hex-#FFEE11, hex-FE1 (shorter version of hex)
+Different ways to define sizes and lenghts:
+    em (calculated current font size), px (pixels), %, pt (points), other metrics (mm,cm,in)
+Web page should not be static and users should be able to view page as they like it. 
+    Recommended to use em and % rather than px because px is fixed and allows no variability
+
+}
