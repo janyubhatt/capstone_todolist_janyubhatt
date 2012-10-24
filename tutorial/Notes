@@ -1,7 +1,10 @@
 Notes From HTML Dog:
 
 HTML{
-
+HTML is structured by tags <tag></tag>
+usually they have end tags aswell although some tags close themselves ex <link/>...
+Some tags have attributes, which provide more info. They are always inside the tag, after the tag name, and their values 
+are in quotation marks
 
 }
 
