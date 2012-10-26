@@ -5,6 +5,8 @@ HTML is structured by tags <tag></tag>
 usually they have end tags aswell although some tags close themselves ex <link/>...
 Some tags have attributes, which provide more info. They are always inside the tag, after the tag name, and their values 
 are in quotation marks
+the <a> tag creates a link that opens a new window/tab. This isn't preferred because it hurts usability since
+the  navigation is interrupted-back button isn't able to be used. Also, users don't want windows all over the place
 
 }
 
@@ -18,3 +20,6 @@ Web page should not be static and users should be able to view page as they like
     Recommended to use em and % rather than px because px is fixed and allows no variability
 
 }
+
+
+Notes from Idiots Guide to 
