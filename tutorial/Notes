@@ -18,6 +18,34 @@ Different ways to define sizes and lenghts:
     em (calculated current font size), px (pixels), %, pt (points), other metrics (mm,cm,in)
 Web page should not be static and users should be able to view page as they like it. 
     Recommended to use em and % rather than px because px is fixed and allows no variability
+    
+Font-family=actual font (times new roman, arial...)
+    the font specified must be on the users computer, so should not use strange, obscure fonts
+    it is possible to indicate multiple fonts too, seperated by commas. The first font indicated is the preferref font to use,
+    and the second one is used if the first is not available and so on...
+    for example, //font-color: arial, helvetica // is common because arial is found on most pc's but not helvetica, and 
+    helvetica is found on most macs, but not arial
+    if the font is multiple words, use quotations: "times new roman"
+Other font font properties:  font-size, font-weight, font-decoration
+font-size text such as headings should not be paragraphs with really arge font-use h1...tags, but just adjust font size to your needs
+    be judicial with font size
+font weight indicates whether the font is bold or not.
+    ususally it works like//font-weight: bold or font-weight:normal
+    the full possibilities are: lighter, 100,200,300..900, but browsers usually prefer just bold or normal
+font style is italic or normal
+font decoration means underine or not
+    it can be none, overline, line-through, and underline
+    usually shouldn't underline things since people expect underlined words to be links, and this property is normally used
+    to decorate links-ex, saying font-decoration: none, to make links not underlined.
+text-transform will change the case of the font
+    capitalize(first letter of each word capital), uppercase, lowercase, none
+Text spacing: letter-spacing or word-spacing are used for space betweeen the text. Their values can be a lenght or 'normal'
+    line-height sets the height of the lines without affecting font. It can bea number(which is a multiple of font size), a length, a percentage, or normal
+    text-align can be right,center,left,justify
+    text-indent specifies the first line of paragraphs, to the specified length or percent.    
+
+The box method consists of the margin,the border, the padding, and the element.
+The individual settings of these properities for the four sides can be set like this: margin-top:....
 
 }
 
