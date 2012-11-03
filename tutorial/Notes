@@ -1,16 +1,12 @@
 Notes From HTML Dog:
+{
 
-HTML{
 HTML is structured by tags <tag></tag>
 usually they have end tags aswell although some tags close themselves ex <link/>...
 Some tags have attributes, which provide more info. They are always inside the tag, after the tag name, and their values 
 are in quotation marks
 the <a> tag creates a link that opens a new window/tab. This isn't preferred because it hurts usability since
 the  navigation is interrupted-back button isn't able to be used. Also, users don't want windows all over the place
-
-}
-
-CSS{
 
 colors are defined by :
     name, rgb (rrr,ggg,bbb), rgb(r%,g%,b%), hex-#FFEE11, hex-FE1 (shorter version of hex)
@@ -46,6 +42,93 @@ Text spacing: letter-spacing or word-spacing are used for space betweeen the tex
 
 The box method consists of the margin,the border, the padding, and the element.
 The individual settings of these properities for the four sides can be set like this: margin-top:....
+
+span and div have no meanings. They are used to chunk html together, usually used in conjunction witih tags and classes
+a span is in line-while a div is block-line (line breaks around it)
+meta tags are used for search engines
+    There is one meta tag that can be used many times with different attributes (content, http-equiv, name)
+    content-the meta dat itself, linked to name and/or http-equiv attribute
+    name can be author, keywords, and description. Descriptin is used by search engines to display apreview of web page in results
+    the http-equiv attribute is used instead of name, and makes an http header...the content attribute cna be content-type. expire,refresh (how often the page automatically refreshes), or set-cookie
+nowadays, however, search engines just used the content on the web page itself to search so meta tags are less and less relevant
+th-header cell in tables.
+colspan for td tags will span the cell over multiple colomns
+row-span will merge the cell over multiple rows.
+when using either of these tags, make sure to delete the extra cell that will be consumed
+dl element is the alternative to ul for definition lists
+dt-the term. There can be multiple dt's for one definitoin
+after the dt, there is a dd, which is the definition. There can be multiple dd's if multiple definitions
+Javascript events can be used like attributes in htmls tags. 
+There are many events 
+the following tags should be avoided (b, i, big, small, hr)
+Use instead (font-weight:bold/strong,em/font-weight:italic, h1/h2font-size, font-size, border-top/image )
+Never use these tags (center, text-align, menu, layer, blink, marquee, font)
+attributes to not use (name, text, bgcolor, background, link, alink, vlink, align, target)
+
+
+a class selector is a name preceded by a full stop (.) and an id selector is a hash (#)
+html refers to the css by id and class attributes.
+ID is used to identify one element, but a class can be used to identify many
+You can also apply a selector to a specific html element by just stating the html selector first (p.jam{..})
+Grouping:
+    if there are multiple selectors with the same properties, you can group them with commas
+    
+Nesting: 
+    nesting allows less Id's and classes. You can specify properties to selectors with selectors
+    ex:
+        #top{...}
+        #top h1{...
+        #top p {...}
+We the selectors are separated by spaces
+"Pseudo classes are bolted on to selectors to specify a state or relation 
+to the selector. They take the form of selector:pseudo class { property: value; },
+ simply with a colon in between the selector and the pseudo class." (htmldog)
+There are four pseudo classes that relate to links which are used by all browsers
+link-unvisited link
+visited-for a link that has already been visited
+active-for a link when it is gains focus ex. it is clicked
+hover-for when the cursor is held over it
+it is good practice to make visited links of different colors
+the standard was that blue was unvisited, purple was visited, however,
+this does not have to be so anymore, aslong as users can distinguish between visited and unvisied
+ margin,padding, and border-width allow one to combine the top/right/left/bottom
+border-width, border-color, and border-style can be put together too
+by stating just two values (margin: 1em 10em)-the first is top/bottom and the second is left/right
+font related properties can also be combined (font: italic bold 1em/1.5 courier);
+Many properties involved manipulating background images
+the background property can combine all of them
+    background: white url(http://www.htmldog.com/images/bg.gif) no-repeat top right;
+this is the combination of background-color
+background image-locaiton of the image itself
+background-repeat, which is how the image repeats itself. This can be repeat, repeat-y, repeatx, or no-repeat
+background-position, which can be top,center,bottom,left,right, or any combination
+Background images can be used for many elements, not just the whole page, and can create cool effects like shaped corners
+    dont' get carried away, and remember that text needs to be readable
+    Use background images where there is no content on the top or make them light.
+
+Seperation between meaning and presentation:
+    htmls is not for presentation-only for meaning
+    CSS is for styling
+    This decreases file sizes, increases flexibility, and makes pages more accessible
+    Also-use tags with meaning-h1 and h2 for headers...
+    Tables should not be used for layout-they are for tabular data. 
+Tags
+all tags should be lowercase and must be closed
+tags that do not have closing tags should close themselves (<br />)
+The markup must be well formed nad elements properly nested
+All documents must have a document type declaration
+
+Attributes
+must be lowercase and their values in quotation marks
+minimized attributes are not allowed (<input type ="checkbox" checked/>)
+The minimized attribute must be given the value that is the same name as the attribute 
+(<input type ="checkbox" checked="checked"/>)
+The name attribute should be replaced by id, there is no target and the alt attribute in img tag is compulsory
+
+Accessibility
+make the page accessible to people with disabilities
+
+        
 
 }
 
