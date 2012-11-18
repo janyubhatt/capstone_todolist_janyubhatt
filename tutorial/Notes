@@ -128,6 +128,17 @@ The name attribute should be replaced by id, there is no target and the alt attr
 Accessibility
 make the page accessible to people with disabilities
 
+Accessible Links
+Tabbing: users should be able to tab properly if they don't have a pointing device. Thus, tab order should be in a logical order. the 
+     tabindex attribute can be used to set tab order. If html is linear, however, this should fall into place
+Accesskeys: assignn keyboard shortcuts to links. Should use them only for main, navigation links. Usually gain focus when pressing alt or ctr
+    <a href="somepage.html" accesskey="s">Some page</a>
+    THe problem is users cant figure out they exist unless looking at html. Some screen readers read out the access key. Other options are to have a page
+    that explains accessibility features of the site
+    Also, some people choose to underline the first letter of the word that corresponds to the access key.
+
+
+
         
 
 }
