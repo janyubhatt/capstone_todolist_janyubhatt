@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ascii Chan</title>
+    </head>
+    <body>
+        <div name="form">
+        <h2> Welcome To Ascii Chan</h2>
+        <br>
+        <form method="post">
+            <label> Title
+                <input type="text" name ="title" value={{title}}>
+            </label>
+            <br>
+            <textarea name="art" rows="8" cols="40">{{art}}</textarea>
+            <br>
+            <input type="submit" value="Submit">
+            <div class="error"> {{error}} </div>
+        </form>
+        <br>
+        {%for art in arts%}
+            <div class="art">
+                <div class = "art-title"> {{art.title}}</div>
+                <pre class = "art-body"> {{art.art}} </pre>
+        {%endfor%}
+    </body>
+<html>

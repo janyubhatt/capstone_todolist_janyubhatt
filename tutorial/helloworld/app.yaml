@@ -5,8 +5,27 @@ api_version: 1
 threadsafe: true
 
 handlers:
-- url: /.*
-  script: helloworld.app
+
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /blog.*
+  script: blog.app
+
+- url: /asciichan.*
+  script: asciichan.app
+  
+- url: /guestbook.*
+  script: guestbook.app
+
+- url: /cookieapp
+  script: cookieapp.app
+
+- url: .*
+  script: helloworld.app 
 libraries:
 - name: webapp2
   version: "2.5.1"
+  
+- name: jinja2
+  version: latest

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2> Enter New Blog Posts Here: </h2>
+        <div class="form">
+            <form method="post">
+                <label> Blog Subject:</label>
+                <br> 
+                <input type="text" value = "{{subject}}" name ="subject">
+                <br>
+                <label>blog:</label>
+                <br>
+                <textarea name="content" rows = 10 cols = 40 >{{content}}</textarea>
+                <br>
+                <input type="submit" value="submit">
+                <br>
+                {{error}}
+            </form>
+        </div>
+    </body>
+</html>

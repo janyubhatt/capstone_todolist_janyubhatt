@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Blog</title>
+    </head>
+    <body>
+        <div class="header">
+            <h2> Welcome to Janyu's Blog site!</h2> 
+            <br>
+            Submit New Entry <a href="blog/newpost">Here!</a>
+            <br>
+            <br>
+        </div>
+        {%for blog in blogs.run(limit=10)%}
+        <div class = blog>
+            <span> {{blog.subject}}</span>
+            <span>&nbsp&nbsp&nbsp&nbsp Submitted:  {{blog.created.strftime("%b,%d,%Y")}}</span>
+            <hr>
+            <div class="blog-body">
+                {{blog.content}}
+            </div>
+            <br>
+            <br>
+        </div>
+        {%endfor%}
+        
+    </body>
+</html>
